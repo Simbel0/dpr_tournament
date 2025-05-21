@@ -1,0 +1,21 @@
+{
+    "id": "dpr_tournament",
+    "name": "Dark Place Tournament",
+    "subtitle": "",
+
+    "version": "v0.0.0",
+
+    "chapter": 2,
+
+    "map": "stadium",
+
+    "dlc": {
+        "extraBinCodes": {},
+        "worldMap": {},
+        "bosses": {}
+    },
+
+    "sharedlibs": [
+        "magical-glass"
+    ],
+}
