@@ -2,7 +2,6 @@ local LightSwitch, super = Class(Event)
 
 function LightSwitch:init(data)
 	super.init(self, data)
-	print("ALKSJLAKJSKJALJS")
 
 	self:setSprite("world/events/"..(Mod:isLight() and "light" or "dark").."_switch1")
 	self:setOrigin(0.5, 1)
