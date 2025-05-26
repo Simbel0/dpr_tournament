@@ -9,8 +9,8 @@ return {
   height = 40,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 9,
-  nextobjectid = 28,
+  nextlayerid = 10,
+  nextobjectid = 31,
   properties = {
     ["name"] = "Dark World Tournament"
   },
@@ -18,14 +18,12 @@ return {
     {
       name = "stadium_dark",
       firstgid = 1,
-      filename = "../tilesets/stadium_dark.tsx",
-      exportfilename = "../tilesets/stadium_dark.lua"
+      filename = "../tilesets/stadium_dark.tsx"
     },
     {
       name = "stadium-pillars_dark",
       firstgid = 43,
-      filename = "../tilesets/stadium-pillars_dark.tsx",
-      exportfilename = "../tilesets/stadium-pillars_dark.lua"
+      filename = "../tilesets/stadium-pillars_dark.tsx"
     }
   },
   layers = {
@@ -189,6 +187,22 @@ return {
           visible = true,
           properties = {
             ["text1"] = "* (This place is unfinished af)\n* (Get out of here)"
+          }
+        },
+        {
+          id = 28,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 720,
+          y = 1600,
+          width = 200,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "stadium_entry",
+            ["marker"] = "entry"
           }
         }
       }
@@ -622,6 +636,48 @@ return {
           y = 520,
           width = 40,
           height = 240,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 9,
+      name = "markers",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 29,
+          name = "entry",
+          type = "",
+          shape = "point",
+          x = 820,
+          y = 1560,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 30,
+          name = "spawn",
+          type = "",
+          shape = "point",
+          x = 840,
+          y = 880,
+          width = 0,
+          height = 0,
           rotation = 0,
           visible = true,
           properties = {}

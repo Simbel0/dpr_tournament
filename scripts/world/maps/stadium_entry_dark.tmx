@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="12">
+ <editorsettings>
+  <export target="stadium_entry_dark.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../tilesets/stadium_dark.tsx"/>
+ <layer id="1" name="Tiles" width="16" height="12">
+  <data encoding="csv">
+28,29,29,29,29,29,29,29,29,29,30,31,13,14,15,31,
+34,35,35,35,35,35,35,35,35,35,36,31,13,14,15,31,
+34,35,35,35,35,35,35,35,35,35,36,31,13,14,15,31,
+34,35,35,35,35,35,35,35,35,35,36,31,13,14,15,31,
+34,35,35,35,35,35,35,35,35,35,36,31,13,14,15,31,
+40,41,41,41,41,41,41,41,41,41,42,31,13,14,15,31,
+31,13,14,15,31,32,31,32,31,32,31,32,13,14,15,31,
+32,13,14,15,32,31,32,31,32,31,32,31,13,14,15,31,
+31,13,14,14,8,8,8,8,8,8,8,8,14,14,15,31,
+31,13,14,14,14,14,14,14,14,14,14,14,14,14,15,31,
+31,19,20,20,20,20,20,20,20,20,20,20,20,20,21,31,
+31,31,31,31,31,31,31,31,31,31,31,31,31,31,31,31
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="4" name="collisions">
+  <object id="6" x="160" y="200" width="280" height="40"/>
+  <object id="7" x="0" y="200" width="40" height="40"/>
+  <object id="8" x="-40" y="200" width="40" height="320"/>
+  <object id="9" x="0" y="480" width="680" height="40"/>
+  <object id="10" x="640" y="0" width="40" height="480"/>
+  <object id="11" x="400" y="0" width="40" height="200"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="2" name="objects">
+  <object id="1" name="elevatordoor" x="40" y="200" width="120" height="40"/>
+  <object id="4" name="transition" x="440" y="-40" width="200" height="40">
+   <properties>
+    <property name="map" value="stadium"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
+  <object id="5" name="interactable" x="390" y="-105">
+   <properties>
+    <property name="solid" type="bool" value="true"/>
+    <property name="text1" value="* (There's a giant toilet-shaped toilet blocking your way.)"/>
+    <property name="text2" value="* (That can only mean that this area is unfinished.)"/>
+    <property name="texture" value="toilet"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#aa00ff" id="3" name="markers">
+  <object id="2" name="entry_elevator" x="100" y="280">
+   <point/>
+  </object>
+  <object id="3" name="entry" x="540" y="40">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
